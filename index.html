@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Jogo da Memória</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="playBackgroundAudio();">
+
+    <section class="hud">
+        <div class="hud-line">
+            <span>TENTATIVAS:</span>&nbsp;&nbsp;<span id="attempts">0</span>
+        </div>
+        <div class="hud-line">
+            <span>SCORE:</span>&nbsp;&nbsp;<span id="score">0</span>
+        </div>
+    </section>
+
+    <section class="memory-game">
+        
+        <div class="memory-card" data-framework="carta-1">
+            <img class="front-face" src="img/1.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-1">
+            <img class="front-face" src="img/1.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        
+        <div class="memory-card" data-framework="carta-2">
+            <img class="front-face" src="img/2.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-2">
+            <img class="front-face" src="img/2.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+          
+        <div class="memory-card" data-framework="carta-3">
+            <img class="front-face" src="img/3.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-3">
+            <img class="front-face" src="img/3.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+          
+        <div class="memory-card" data-framework="carta-4">
+            <img class="front-face" src="img/4.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-4">
+            <img class="front-face" src="img/4.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+          
+        <div class="memory-card" data-framework="carta-5">
+            <img class="front-face" src="img/5.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-5">
+            <img class="front-face" src="img/5.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+          
+        <div class="memory-card" data-framework="carta-6">
+            <img class="front-face" src="img/6.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-6">
+            <img class="front-face" src="img/6.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+
+        <div class="memory-card" data-framework="carta-7">
+            <img class="front-face" src="img/7.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-7">
+            <img class="front-face" src="img/7.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+          
+        <div class="memory-card" data-framework="carta-8">
+            <img class="front-face" src="img/8.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        <div class="memory-card" data-framework="carta-8">
+            <img class="front-face" src="img/8.jpg" alt="Face da Carta">
+            <img class="back-face" src="img/0.jpg" alt="Verso da Carta">
+        </div>
+        
+    </section>
+
+    <div class="home-screen">   
+        <img class="home-screen-img" src="img/home-screen.png" alt="Jogo da Memória">
+        <br>
+        <input type="button" value="INICIAR PARTIDA" onclick="startGame()" />
+    </div>
+
+    <div class="finish-screen">   
+        <img class="home-screen-img" src="img/finish-screen.png" alt="Jogo da Memória">
+        <br>
+        <div class="finish-line">
+            <span>TENTATIVAS:</span>&nbsp;&nbsp;<span id="attempts-finish">0</span>
+        </div>
+        <div class="finish-line">
+            <span>SCORE:</span>&nbsp;&nbsp;<span id="score-finish">0</span>
+        </div>
+        <br>
+        <input type="button" value="VOLTAR AO INÍCIO" onclick="getStartGame()" />
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
